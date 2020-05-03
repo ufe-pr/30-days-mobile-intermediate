@@ -19,6 +19,7 @@ Future<List<Movie>> getMovies({int page = 1, String sort = 'popularity.desc'}) a
     throw Exception('The movies could not be loaded');
   }
 
+  return results.map((i) => Movie.fromMap(i)).toList();
 
 }
 

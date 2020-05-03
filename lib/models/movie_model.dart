@@ -37,7 +37,7 @@ class Movie {
   final double voteAverage;
   final String overview;
   final DateTime releaseDate;
-  List<String> genres;
+  List<String> genres = [];
 
   Movie({
     this.popularity,
